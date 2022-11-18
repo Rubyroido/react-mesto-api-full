@@ -78,9 +78,9 @@ class Api {
 }
 
 const api = new Api({
-  url: 'https://mesto.nomoreparties.co/v1/cohort-42/',
+  url: 'https://api.rubyroido.mesto.nomoredomains.icu/',
   headers: {
-    authorization: 'c420f8b9-4e35-438e-95eb-ba272c384828',
+    authorization: localStorage.getItem('token'),
     'Content-Type': 'application/json',
   }
 });
