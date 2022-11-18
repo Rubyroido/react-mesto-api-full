@@ -1,0 +1,14 @@
+.entry__form {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 450px) {
+    .entry__form {
+        height: 299px;
+    }
+}

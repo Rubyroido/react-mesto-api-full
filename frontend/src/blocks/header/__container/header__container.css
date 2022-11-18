@@ -1,0 +1,7 @@
+.header__container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+}

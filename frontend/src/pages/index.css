@@ -1,0 +1,72 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts/fonts.css);
+
+@import url(../blocks/body/body.css);
+@import url(../blocks/page/page.css);
+@import url(../blocks/main/main.css);
+
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/header/__container/header__container.css);
+@import url(../blocks/header/__email/header__email.css);
+@import url(../blocks/header/__button/header__button.css);
+
+@import url(../blocks/profile/profile.css);
+@import url(../blocks/profile/__card/profile__card.css);
+@import url(../blocks/profile/__avatar-container/profile__avatar-container.css);
+@import url(../blocks/profile/__avatar/profile__avatar.css);
+@import url(../blocks/profile/__avatar-change/profile__avatar-change.css);
+@import url(../blocks/profile/__info/profile__info.css);
+@import url(../blocks/profile/__name/profile__name.css);
+@import url(../blocks/profile/__description/profile__description.css);
+@import url(../blocks/profile/__button-edit/profile__button-edit.css);
+@import url(../blocks/profile/__button-add/profile__button-add.css);
+
+@import url(../blocks/places/places.css);
+@import url(../blocks/table/table.css);
+@import url(../blocks/table/__cell/table__cell.css);
+@import url(../blocks/table/__photo/table__photo.css);
+@import url(../blocks/table/__photo-description/table__photo-description.css);
+@import url(../blocks/table/__photo-name/table__photo-name.css);
+@import url(../blocks/table/__like-container/table__like-container.css);
+@import url(../blocks/table/__button-like/table__button-like.css);
+@import url(../blocks/table/__like-counter/table__like-counter.css);
+@import url(../blocks/table/__button-like/_active/button-like_active.css);
+@import url(../blocks/table/__button-delete/table__button-delete.css);
+@import url(../blocks/table/__button-delete/_hidden/button-delete_hidden.css);
+
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__copyright/footer__copyright.css);
+
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/_type/popup_type_photo.css);
+@import url(../blocks/popup/_opened/popup_opened.css);
+@import url(../blocks/popup/__container/popup__container.css);
+@import url(../blocks/popup/__container_name/popup__container-name.css);
+@import url(../blocks/popup/__button-close/popup__button-close.css);
+@import url(../blocks/popup/__field/popup__field.css);
+@import url(../blocks/popup/__field/_invalid/popup__field_invalid.css);
+@import url(../blocks/popup/__button-save/popup__button-save.css);
+@import url(../blocks/popup/__button-save/_inactive/popup__button-save_inactive.css);
+@import url(../blocks/popup/__photo-container/popup__photo-container.css);
+@import url(../blocks/popup/__photo/popup__photo.css);
+@import url(../blocks/popup/__photo-name/popup__photo-name.css);
+@import url(../blocks/popup/__error/popup__error.css);
+@import url(../blocks/popup/__message/popup__message.css);
+@import url(../blocks/popup/__image/popup__image.css);
+
+@import url(../blocks/popup/__delete-container/popup__delete-container.css);
+@import url(../blocks/popup/__delete-container-name/popup__delete-container-name.css);
+
+@import url(../blocks/popup/__avatar-container/popup__avatar-container.css);
+@import url(../blocks/popup/__avatar-container-name/popup__avatar-container-name.css);
+
+@import url(../blocks/entry/entry.css);
+@import url(../blocks/entry/__name/entry__name.css);
+@import url(../blocks/entry/__form/entry__form.css);
+@import url(../blocks/entry/__container/entry__container.css);
+@import url(../blocks/entry/__input/entry__input.css);
+@import url(../blocks/entry/__button/entry__button.css);
+@import url(../blocks/entry/__text/entry__text.css);
+@import url(../blocks/entry/__link/entry__link.css);

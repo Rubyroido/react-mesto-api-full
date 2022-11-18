@@ -1,0 +1,9 @@
+.table__photo-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 246px;
+  margin: auto;
+  color: black;
+  padding: 22px 18px 23px;
+}

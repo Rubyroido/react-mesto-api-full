@@ -1,0 +1,20 @@
+.table__button-delete {
+  background-image: url(../../../images/button_delete.svg);
+  background-color: rgba(0, 0, 0, 0);
+  background-size: contain;
+  border: none;
+  width: 18px;
+  height: 19px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 5;
+  padding: 0;
+  margin: 0;
+  transition: opacity 0.5s linear 0s;
+}
+
+.table__button-delete:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}

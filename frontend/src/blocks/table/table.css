@@ -1,0 +1,23 @@
+.table {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(3, 282px);
+  gap: 17px;
+  list-style: none;
+  object-fit: cover;
+  padding: 0;
+  margin: auto;
+}
+
+@media screen and (max-width: 950px) {
+  .table {
+    grid-template-columns: repeat(2, 282px);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .table {
+    grid-template-columns: 282px;
+    gap: 20px;
+  }
+}

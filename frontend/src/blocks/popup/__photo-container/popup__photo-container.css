@@ -1,0 +1,7 @@
+.popup__photo-container {
+  position: relative;
+  max-width: fit-content;
+  max-height: fit-content;
+  border: none;
+
+}
