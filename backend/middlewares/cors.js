@@ -1,7 +1,8 @@
 const allowedCors = [
   'https://rubyroido.mesto.nomoredomains.icu',
   'http://rubyroido.mesto.nomoredomains.icu',
-  'localhost:3000'
+  'http://localhost:3000',
+  'https://localhost:3000'
 ];
 
 module.exports = (req, res, next) => {
