@@ -14,21 +14,21 @@ class Api {
   }
 
   getUserInfo() {
-    return fetch(`${this.url}users/me`, {
+    return fetch(`${this.url}/users/me`, {
       headers: this.headers
     })
       .then(this.handleResponse);
   }
 
   getInitialCards() {
-    return fetch(`${this.url}cards`, {
+    return fetch(`${this.url}/cards`, {
       headers: this.headers
     })
       .then(this.handleResponse);
   }
 
   updateProfile({ name, about }) {
-    return fetch(`${this.url}users/me`, {
+    return fetch(`${this.url}/users/me`, {
       method: 'PATCH',
       headers: this.headers,
       body: JSON.stringify({
@@ -40,7 +40,7 @@ class Api {
   }
 
   createNewCard({name, link}) {
-    return fetch(`${this.url}cards`, {
+    return fetch(`${this.url}/cards`, {
       method: 'POST',
       headers: this.headers,
       body: JSON.stringify({
@@ -52,7 +52,7 @@ class Api {
   }
 
   deleteCard(id) {
-    return fetch(`${this.url}cards/${id}`, {
+    return fetch(`${this.url}/cards/${id}`, {
       method: 'DELETE',
       headers: this.headers
     })
@@ -60,7 +60,7 @@ class Api {
   }
 
   changeLikeCardStatus(id, isLiked) {
-    return fetch(`${this.url}cards/${id}/likes`, {
+    return fetch(`${this.url}/cards/${id}/likes`, {
       method: isLiked ? 'PUT' : 'DELETE',
       headers: this.headers
     })
@@ -68,7 +68,7 @@ class Api {
   }
 
   updateAvatar(avatar) {
-    return fetch(`${this.url}users/me/avatar`, {
+    return fetch(`${this.url}/users/me/avatar`, {
       method: 'PATCH',
       headers: this.headers,
       body: JSON.stringify({ avatar })
@@ -78,7 +78,7 @@ class Api {
 }
 
 const api = new Api({
-  url: 'https://api.rubyroido.mesto.nomoredomains.icu/',
+  url: 'https://api.rubyroido.mesto.nomoredomains.icu',
   headers: {
     authorization: localStorage.getItem('token'),
     'Content-Type': 'application/json',

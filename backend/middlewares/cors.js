@@ -1,6 +1,6 @@
 const allowedCors = [
-  'https://rubyroido.mesto.nomoredomains.icu/',
-  'http://rubyroido.mesto.nomoredomains.icu/',
+  'https://rubyroido.mesto.nomoredomains.icu',
+  'http://rubyroido.mesto.nomoredomains.icu',
   'localhost:3000'
 ];
 
