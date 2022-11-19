@@ -80,9 +80,9 @@ class Api {
 const api = new Api({
   url: 'https://api.rubyroido.mesto.nomoredomains.icu',
   headers: {
-    authorization: localStorage.getItem('token'),
+    'authorization': `Bearer ${localStorage.getItem('token')}`,
     'Content-Type': 'application/json',
   }
 });
 
-export default api;
+export default api; 

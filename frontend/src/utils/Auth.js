@@ -47,14 +47,14 @@ export const validate = (token) => {
     method: 'GET',
     headers: {
       "Content-Type": "application/json",
-      "Authorization": `Bearer ${token}`
+      'authorization': `Bearer ${token}`
     }
   })
     .then((res) => {
       return checkResponse(res);
     })
     .then((res) => {
-      if (res.data.email) {
+      if (res.email) {
         return res;
       }
     });
