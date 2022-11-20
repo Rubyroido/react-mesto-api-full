@@ -49,9 +49,10 @@ function App() {
     if (token) {
       validate(token)
         .then((res) => {
+          api.setToken(token);
           setIsLoggedIn(true);
-          history.push('/');
           setUserEmail(res.email);
+          history.push('/');
         })
         .catch((err) => {
           setIsLoggedIn(false);
@@ -170,8 +171,8 @@ function App() {
   function onLogin(password, email) {
     authorize(password, email)
       .then((data) => {
-        history.push('/');
         setUserEmail(data.email);
+        history.push('/');
       })
       .catch(() => {
         setIsLoggedIn(false);

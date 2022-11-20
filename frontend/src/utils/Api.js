@@ -6,6 +6,10 @@ class Api {
     this.headers = options.headers;
   }
 
+  setToken = (item) => {
+    this.headers.authorization = `Bearer ${item}`;
+  }
+
   handleResponse(res) {
     if (res.ok) {
       return res.json();
@@ -15,7 +19,7 @@ class Api {
 
   getUserInfo() {
     return fetch(`${this.url}/users/me`, {
-      headers: this.headers
+      headers: this.headers,
     })
       .then(this.handleResponse);
   }
